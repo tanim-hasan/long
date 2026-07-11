@@ -23,9 +23,9 @@ read:
 
     cmp al,13
     je check
-
-    sub al,'0'
     mov bl,al
+    sub bl,30h
+    
     mov ax,num
     mov cx,10
     mul cx
