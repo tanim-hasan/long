@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="9D366420-17C8-426f-88A1-972BB4E3D5A0" name="PC3" poe="0" model="PC" settings=" -simpc_ip 20.10.10.1  -simpc_mask 255.255.255.0  -simpc_gateway 20.10.10.254  -simpc_mac 54-89-98-69-26-5B  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-69-26-5B" com_port="0" bootmode="0" cx="869.970032" cy="754.450073" edit_left="896" edit_top="808">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="18D06139-5A1D-4672-A314-FAB9CEC4C7C0" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-42-79-21" com_port="2002" bootmode="0" cx="684.560059" cy="390.720032" edit_left="696" edit_top="439">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="0361C6C6-6F48-429c-B08B-BA898AA0DC92" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-22-28-0A" com_port="2006" bootmode="0" cx="686.140015" cy="566.200073" edit_left="713" edit_top="620">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="7C9C70B2-8944-4225-91BA-6F6C3E67DDCD" name="PC2" poe="0" model="PC" settings=" -simpc_ip 10.10.10.1  -simpc_mask 255.255.255.0  -simpc_gateway 10.10.10.254  -simpc_mac 54-89-98-24-20-99  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-24-20-99" com_port="0" bootmode="0" cx="516.940063" cy="749.560059" edit_left="543" edit_top="803">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="18D06139-5A1D-4672-A314-FAB9CEC4C7C0" destDeviceID="0361C6C6-6F48-429c-B08B-BA898AA0DC92">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="711.490723" srcBoundRect_Y="460.180969" srcOffset_X="-51.000000" srcOffset_Y="-1.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="712.509277" tarBoundRect_Y="549.819031" tarOffset_X="-53.000000" tarOffset_Y="-1.000000" />
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="723.490723" srcBoundRect_Y="448.180969" srcOffset_X="10.000000" srcOffset_Y="-1.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="724.509277" tarBoundRect_Y="537.819031" tarOffset_X="8.000000" tarOffset_Y="-3.000000" />
+        </line>
+        <line srcDeviceID="0361C6C6-6F48-429c-B08B-BA898AA0DC92" destDeviceID="7C9C70B2-8944-4225-91BA-6F6C3E67DDCD">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="683.608948" srcBoundRect_Y="624.638611" srcOffset_X="-64.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="572.391052" tarBoundRect_Y="744.361389" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="0361C6C6-6F48-429c-B08B-BA898AA0DC92" destDeviceID="9D366420-17C8-426f-88A1-972BB4E3D5A0">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="743.121277" srcBoundRect_Y="623.944275" srcOffset_X="13.000000" srcOffset_Y="-5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="865.878723" tarBoundRect_Y="750.055725" tarOffset_X="7.000000" tarOffset_Y="-18.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="515" top="588" right="617" bottom="605" content="10.10.10.0 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="803" top="581" right="905" bottom="598" content="20.10.10.0 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="509" top="838" right="566" bottom="855" content="vlan 10" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="878" top="834" right="935" bottom="851" content="vlan 20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1060" top="571" right="1268" bottom="697" content="sys&#x0D;&#x0A;sysname AR1&#x0D;&#x0A;vlan batch 10 20&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip address 10.10.10.254 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip address 20.10.10.254 24&#x0D;&#x0A;quit" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="274" top="594" right="444" bottom="845" content="sys&#x0D;&#x0A;sysname LSW1&#x0D;&#x0A;vlan batch 10 20&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;port link-type access&#x0D;&#x0A;port default vlan 10&#x0D;&#x0A;int g0/0/2&#x0D;&#x0A;port link-type access&#x0D;&#x0A;port default vlan 20&#x0D;&#x0A;int g0/0/3&#x0D;&#x0A;port link-type access&#x0D;&#x0A;port default vlan 10&#x0D;&#x0A;int g0/0/4&#x0D;&#x0A;port link-type access&#x0D;&#x0A;port default vlan 20&#x0D;&#x0A;quit" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
